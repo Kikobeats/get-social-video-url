@@ -1,5 +1,7 @@
 # get-social-video-url
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/get-social-video-url.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/get-social-video-url.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/get-social-video-url/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/get-social-video-url)
 [![Dependency status](https://img.shields.io/david/Kikobeats/get-social-video-url.svg?style=flat-square)](https://david-dm.org/Kikobeats/get-social-video-url)
