@@ -50,7 +50,7 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin}/**/*.js --single-quote",
-    "test": "nyc ava"
+    "test": "NODE_ENV=test nyc ava"
   },
   "license": "MIT",
   "lint-staged": {

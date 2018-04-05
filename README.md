@@ -2,7 +2,6 @@
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/get-social-video-url.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/get-social-video-url/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/get-social-video-url)
-[![Coverage Status](https://img.shields.io/coveralls/Kikobeats/get-social-video-url.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/get-social-video-url)
 [![Dependency status](https://img.shields.io/david/Kikobeats/get-social-video-url.svg?style=flat-square)](https://david-dm.org/Kikobeats/get-social-video-url)
 [![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/get-social-video-url.svg?style=flat-square)](https://david-dm.org/Kikobeats/get-social-video-url#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/get-social-video-url.svg?style=flat-square)](https://www.npmjs.org/package/get-social-video-url)
@@ -39,7 +38,7 @@ const browserless = require('browserless')()
 })()
 ```
 
-See [/example.js](example) for more.
+See [example](/example.js) for more.
 
 ## License
 
