@@ -8,7 +8,7 @@ const getSocialVideoUrl = require('./')
 const url = new URL(process.argv[2])
 ;(async () => {
   try {
-    const data = getSocialVideoUrl({ url: url.toString(), browserless })
+    const data = await getSocialVideoUrl({ url: url.toString(), browserless })
     console.log(data)
     process.exit()
   } catch (err) {

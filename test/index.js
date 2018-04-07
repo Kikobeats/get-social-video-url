@@ -37,3 +37,12 @@ test('vimeo', async t => {
   })
   t.snapshot(serialize(payload))
 })
+
+test('not supported url', async t => {
+  const payload = await getSocialVideoUrl({
+    url: 'https://github.com/microlinkhq/sdk/blob/master/packages/react-microlink/package.json',
+    browserless
+  })
+
+  t.snapshot(serialize(payload))
+})

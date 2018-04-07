@@ -11,28 +11,24 @@ module.exports = async ({ url, browserless }) => {
   await page.click('#url')
   await page.keyboard.type(url)
   await page.click('#sub_bl > input')
-  await page.waitFor('.download_links')
+
+  await page.waitFor(() =>
+    document.querySelector('.download_links') ||
+    document.querySelector('.error')
+  )
 
   const payload = await page.evaluate(() => {
-    const getHref = selector => selector && selector.href
+    const getQuality = n => `#search_results > div.download_links > p:nth-child(${n}) > a`
+    const qualities = []
+    let index = 0
 
-    return {
-      hd: getHref(
-        document.querySelector(
-          '#search_results > div.download_links > p:nth-child(1) > a'
-        )
-      ),
-      sd: getHref(
-        document.querySelector(
-          '#search_results > div.download_links > p:nth-child(2) > a'
-        )
-      ),
-      mobile: getHref(
-        document.querySelector(
-          '#search_results > div.download_links > p:nth-child(3) > a'
-        )
-      )
+    while (true) {
+      const el = document.querySelector(getQuality(++index))
+      if (el) qualities.push(el.href)
+      else break
     }
+
+    return qualities
   })
 
   await page.close()

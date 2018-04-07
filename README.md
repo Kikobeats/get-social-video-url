@@ -30,13 +30,15 @@ const browserless = require('browserless')()
   })()
 
   console.log(videoQualities)
-  // {
-  //   hd: 'https://video.twimg.com/amplify_video/943561675927519232/vid/720x720/h1uN7biCI-Fbzm9D.mp4',
-  //   mobile: 'https://video.twimg.com/amplify_video/943561675927519232/vid/240x240/mijiQdCq-p9FaO8H.mp4',
-  //   sd: 'https://video.twimg.com/amplify_video/943561675927519232/vid/480x480/qURzB_XtWBE-dvRa.mp4',
-  // }
+  // [
+  //   'https://video.twimg.com/amplify_video/943561675927519232/vid/720x720/h1uN7biCI-Fbzm9D.mp4',
+  //   'https://video.twimg.com/amplify_video/943561675927519232/vid/480x480/qURzB_XtWBE-dvRa.mp4',
+  //   'https://video.twimg.com/amplify_video/943561675927519232/vid/240x240/mijiQdCq-p9FaO8H.mp4'
+  // ]
 })()
 ```
+
+Qualities are sorted from high to low.
 
 See [example](/example.js) for more.
 
