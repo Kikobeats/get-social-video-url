@@ -1,6 +1,51 @@
 'use strict'
 
+const parseDomain = require('parse-domain')
+
+const SUPPORTED_PROVIDERS = [
+  'dailymotion',
+  'facebook',
+  'vimeo',
+  'twitter',
+  'vine',
+  'aol',
+  'rumble',
+  'streamable',
+  'liveleak',
+  'ustream',
+  'break',
+  'collegehumor',
+  'coub',
+  'flickr',
+  'focus',
+  'gmx',
+  'web',
+  'howcast',
+  'magisto',
+  'metacafe',
+  'mgoon',
+  'miomio',
+  'rutube',
+  'sapo',
+  'tagstory',
+  'tiscali',
+  'tu',
+  'tudou',
+  'tvuol',
+  'veoh',
+  'videochart',
+  'mthai',
+  'online',
+  'vidmax',
+  'worldstarhiphop',
+  'youku'
+]
+
+const isSupportedProvider = url => SUPPORTED_PROVIDERS.includes(parseDomain(url).domain)
+
 module.exports = async ({ url, browserless }) => {
+  if (!isSupportedProvider(url)) return []
+
   const page = await browserless.page()
 
   await browserless.goto(page, {

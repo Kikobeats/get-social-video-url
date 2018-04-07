@@ -65,5 +65,8 @@
       "standard-markdown",
       "git add"
     ]
+  },
+  "dependencies": {
+    "parse-domain": "~2.0.0"
   }
 }
