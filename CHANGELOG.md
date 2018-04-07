@@ -1,3 +1,10 @@
+<a name="2.1.0"></a>
+# 2.1.0 (2018-04-07)
+
+* Add a list of supported domains ([cd9bff7](https://github.com/Kikobeats/get-social-video-url/commit/cd9bff7))
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2018-04-07)
 
