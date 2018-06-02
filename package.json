@@ -25,7 +25,7 @@
     "vimeo"
   ],
   "dependencies": {
-    "parse-domain": "~2.0.0"
+    "parse-domain": "~2.1.0"
   },
   "devDependencies": {
     "ava": "latest",
